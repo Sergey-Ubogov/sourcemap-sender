@@ -1,13 +1,7 @@
 const {sendFiles, getAllFilesWithExtInFolder} = require('ftp-client-wrapper');
 const args = require("args-parser")(process.argv);
 
-export default class SourcemapSender {
-	sourcemapsFolder;
-	assetsmapFolder;
-	destinationHost;
-	projectName;
-	projectVersion;
-
+class SourcemapSender {
 	constructor(configPath) {
 		let {destinationHost, sourcemapsFolder, assetsmapFolder, projectName} = require(configPath);
 		this.sourcemapsFolder = args.sourcemapsFolder || sourcemapsFolder;
@@ -33,10 +27,4 @@ export default class SourcemapSender {
 	}
 }
 
-
-
-
-
-
-
-
+module.exports = SourcemapSender;
