@@ -1,0 +1,19 @@
+{
+  "name": "sourcemap-sender",
+  "version": "1.0.0",
+  "description": "send sourcemap by ftp client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sourcemap",
+    "sourcemaps"
+  ],
+  "author": "Sergey Ubogov",
+  "license": "MIT",
+  "dependencies": {
+    "args-parser": "^1.1.0",
+    "ftp-client-wrapper": "^1.0.7"
+  }
+}
