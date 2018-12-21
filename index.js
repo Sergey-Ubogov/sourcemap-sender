@@ -8,7 +8,7 @@ class SourcemapSender {
 		this.assetsmapFolder = args.assetsmapFolder || assetsmapFolder;
 		this.destinationHost = args.destinationHost || destinationHost;
 		this.projectName = args.projectName || projectName || 'default';
-		this.projectVersion = args.version || new Date().toLocaleString().replace(/:/g, '-').replace(/ /g, '_');
+		this.projectVersion = args.version || new Date().toLocaleString().replace(/:/g, '-').replace(/ /g, '_').replace(/[/|\\]/g, '.');
 
 
 	}
